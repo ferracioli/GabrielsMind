@@ -11,10 +11,10 @@ const buildCard = career => {
     const text = document.createElement("text");
 
     // Obtem a tag de id career para colocar os elementos dentro
-    const career = document.querySelector("#career");
+    const career_instance = document.querySelector("#career");
 
     // Monta a hierarquia HTML
-    career.append(parent_div);
+    career_instance.append(parent_div);
     child_div.append(title);
     child_div.append(datetime);
     child_div.append(text);
