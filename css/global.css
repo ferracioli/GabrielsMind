@@ -31,6 +31,15 @@ body{
     padding: 0 10vw;
     position:sticky;
 	top:0;
+
+    display: flex;
+    flex-direction: row;
+}
+/* Em telas menores, a navbar fica como coluna */
+@media only screen and (max-width: 420px){
+	#navbar {
+		flex-direction: column; 
+	}
 }
 
 #page-name {
