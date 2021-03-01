@@ -1,0 +1,84 @@
+/* Inclui todas as fontes que serão usadas */
+@font-face {
+    font-family: 'Six Caps';
+    src: url('../assets/fonts/SixCaps-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* OBS: a roboto não é salva localmente pois seu carregamento é menos perceptível, e a inclusão é muito grande */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+/* Define as cores usadas como variáveis, para facilitar (cores do Game Boy clássico) */
+:root {
+    --white: #c6c0bd;
+    --black: #272a29;
+    --gray: #797276;
+    --blue: #323187;
+    --red: #991c58;
+    --green: #7d9f53;
+  }
+
+body{
+	/*Evita faixas brancas em algumas telas */
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+#navbar {
+    background-color:var(--white);
+	box-shadow: 0px 3px 3px 0px var(--gray);
+    padding: 0 10vw;
+    position:sticky;
+	top:0;
+}
+
+#page-name {
+    font-family: "Six Caps";
+	font-size: 60px;
+	text-decoration: none;
+    color: var(--black);
+}
+
+.header-link {
+    color: var(--black);
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	transition: 0.5s;
+	margin: 0 10px 0 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.header-link:hover {
+	border-color: var(--black);
+}
+
+.white-background {background-color: var(--white);}
+.black-background {background-color: var(--black);}
+.white {color: var(--white);}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+.center {
+    align-items: center;
+    justify-content: center;
+}
+.space-between {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#apagar {
+    height: 1000px;
+}
+
+#footer {
+    width: 100%;
+    height: 80px;
+}
