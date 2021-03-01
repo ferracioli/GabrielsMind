@@ -91,3 +91,8 @@ body{
     width: 100%;
     height: 80px;
 }
+
+.miniature_img {
+    width: 80px;
+    height: 80px;
+}
