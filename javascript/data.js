@@ -27,7 +27,7 @@ export const data = [
     {
         id: 4,
         link: "https://github.com/AndreSFND/Overkibe",
-        miniature_img: "assets/miniature_img/overkibe.png",
+        miniature_img: "assets/miniature_img/desmipstificando.png",
         title: "Overkibe",
         datetime: "Dezembro de 2020",
         text: "Jogo apresentado como trabalho final da matéria Sistemas Operacionais, com o objetivo de exemplificar o funcionamento dos processos do computador de maneira lúdica. Toda a arte do jogo foi criada por mim, e ela foi feita com a ferramenta GIMP."
