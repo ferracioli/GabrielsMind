@@ -20,7 +20,7 @@ const buildCard = career => {
     child_div.append(datetime);
     child_div.append(text);
     link.append(miniature_img);
-    parent_div.append(miniature_img);
+    parent_div.append(link);
     parent_div.append(child_div);
 
     // Adiciona classes às tags e outros atributos
