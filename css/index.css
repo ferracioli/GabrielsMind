@@ -9,45 +9,61 @@
     --green: #7d9f53;
 }
 
+#introduction {
+    text-align: justify;
+    text-justify:inter-ideograph;
+    width: 80%;
+    padding: 0 0 20px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Card contendo um elemento completo */
 .card {
     max-width: 80vw;
     align-items: initial;
     background-color: var(--gray);
     padding: 20px;
     margin: 0 0 20px 0;
-    border-radius: 8px;
+    border-radius: 10px;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
 	.card {
 		flex-direction: column; 
         align-items: center;
 	}
 }
 
+/* Imagem que fica na lateral do card */
 .miniature_img {
     width: 80px;
     height: 80px;
 }
 
+
+/* Estilização completa do texto que fica no card */
 .description {
     padding: 0 0 0 20px;
     max-width: 80%;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
 	.description {
 		text-align:left;
         max-width: 90%;
 	}
 }
 
-@media only screen and (min-width: 601px){
+/* Título e período do evento */
+.important {
+    text-align:left;
+    font-size: 18px;
+}
+/* Texto com a descrição inteira */
+@media only screen and (min-width: 601px) {
 	.backstory {
         text-align: justify;
         text-justify:inter-ideograph;
 	}
-}
-
-.important {
-    text-align:left;
-    font-size: 17px;
 }

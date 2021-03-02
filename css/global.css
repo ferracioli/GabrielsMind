@@ -34,6 +34,8 @@ text, a, h1, h2, h3, h4, h5, h6 {
 .white-background {background-color: var(--white);}
 .black-background {background-color: var(--black);}
 .white {color: var(--white);}
+.blue {color: var(--blue);}
+.red {color: var(--red);}
 
 /* Estilização fixa para todas as tags div */
 .vertical {
