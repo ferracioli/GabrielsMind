@@ -19,7 +19,7 @@ export const data = [
     {
         id: 3,
         link: "https://github.com/AndreSFND/desmipstificando",
-        miniature_img: "assets/miniature_img/bomberman.png",
+        miniature_img: "assets/miniature_img/desmipstificando.png",
         title: "Desmipstificando",
         datetime: "Outubro de 2020",
         text: "Trabalho apresentado na disciplina de Organização e Arquitetura de Computadores, com o objetivo de criar alguma plataforma de ensino da arquitetura Assembly MIPS, assim, a plataforma mostrada é capaz de ensinar tópicos teóricos e práticos do tema."
@@ -27,7 +27,7 @@ export const data = [
     {
         id: 4,
         link: "https://github.com/AndreSFND/Overkibe",
-        miniature_img: "assets/miniature_img/desmipstificando.png",
+        miniature_img: "assets/miniature_img/overkibe.png",
         title: "Overkibe",
         datetime: "Dezembro de 2020",
         text: "Jogo apresentado como trabalho final da matéria Sistemas Operacionais, com o objetivo de exemplificar o funcionamento dos processos do computador de maneira lúdica. Toda a arte do jogo foi criada por mim, e ela foi feita com a ferramenta GIMP."
