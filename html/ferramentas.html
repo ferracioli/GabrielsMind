@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Tags usadas para obter as dimensões do dispositivo -->
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<title>Gabriel´s Mind</title>
+		<link rel="shortcut icon" href="../assets/icon.ico"/>
+		
+		<script src="../javascript/utilities.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/global.css">
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+	</head>
+	<body>
+        <nav id="navbar" class="light-navbar">
+            <a href="../index.html" id="page-name" class="black">Gabriel's Mind</a>
+			<div class="horizontal center">
+				<a href="../index.html" id="button-1" class="header-link light-header-link black">INÍCIO</a>
+				<a href="https://br.linkedin.com/in/gabriel-monteiro-ferracioli-ba042b191" id="button-2" class="header-link light-header-link black">CONTATO</a>
+				<a href="ferramentas.html" id="button-3" class="header-link light-header-link black">FERRAMENTAS</a>
+			</div>
+			<img id="change-mode" src="../assets/DarkMode.png" onclick="changeMode()">
+        </nav>
+        <div id="page-body" class="vertical center white-background">
+
+            <br id="easter-egg">
+            <text id="intro" class="black">
+                
+                <script>
+                    document.write("A sua tela tem as dimensão de " + window.screen.availWidth + " x " + window.screen.availHeight); 
+                    
+                </script>
+
+            </text>
+            </br>
+            
+            <div id="footer" class="horizontal center black-background"><text class="white">Construído por <a style="text-decoration: none;" class="white" href="https://br.linkedin.com/in/gabriel-monteiro-ferracioli-ba042b191">Gabriel Ferracioli</a></text></div>
+        </div>
+	</body>
+</html>

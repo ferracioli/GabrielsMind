@@ -35,6 +35,19 @@ const buildCard = career => {
     title.setAttribute("class", "important");
     datetime.setAttribute("class", "important");
     text.setAttribute("class", "backstory");
+
+    /* Blocos gerados com a build:
+        <div class="horizontal center card">
+            <a href="geral.com">
+                <img src="assets/miniature_img/nome.png" class="miniature_img"> 
+            </a>
+            <div class="vertical center description">
+                <text class="important">Title</text>
+                <text class="important">Datetime</text>
+                <text class="description">Your whole text</text>
+            </div>
+        </div>
+    */
 };
 
 data.forEach(career => buildCard(career));
