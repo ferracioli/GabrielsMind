@@ -1,12 +1,13 @@
 /* Estilos exclusivos da página index */
+
 /* Define as cores usadas como variáveis, para facilitar (cores do Game Boy clássico) */
 :root {
-    --white: #c6c0bd;
-    --black: #272a29;
-    --gray: #797276;
-    --blue: #323187;
-    --red: #991c58;
-    --green: #7d9f53;
+    --black: #242320;
+    --gray: #808080;
+    --white: #f3f5ef;
+    --blue: #6fc5dd;
+    --red: #d02761;
+    --yellow: #e3d663;
 }
 
 #introduction {
