@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Tags usadas para obter as dimensões do dispositivo -->
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<title>Gabriel´s Mind</title>
+		<link rel="shortcut icon" href="../../assets/icon.ico"/>
+		
+		<script src="../../javascript/utilities.js"></script>
+        <script src="../../javascript/ferramentas/perceptron.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/global.css">
+	</head>
+	<body>
+        <nav id="navbar" class="light-navbar">
+            <a href="../../index.html" id="page-name" class="black">Gabriel's Mind</a>
+			<div class="horizontal center">
+				<a href="../../index.html" id="button-1" class="header-link light-header-link black">INÍCIO</a>
+				<a href="https://br.linkedin.com/in/gabriel-monteiro-ferracioli-ba042b191" id="button-2" class="header-link light-header-link black">CONTATO</a>
+				<a href="../ferramentas.html" id="button-3" class="header-link light-header-link black">FERRAMENTAS</a>
+			</div>
+			<img id="change-mode" src="../../assets/DarkMode.png" onclick="changeMode()">
+        </nav>
+
+        <div id="page-body" class="vertical center white-background">
+
+            <br id="easter-egg">
+
+			<br>
+
+            <script>
+                let matrixTreino = [];
+                let matrixTeste = [];
+            </script>
+
+            <div class="responsive-div">
+                <div class="vertical">
+
+                    <label class="text">Taxa de aprendizagem</label>
+                    <textarea id="taxaAprendizagem" class="text">0.01</textarea>
+
+                    <label class="text">Quantidade de sinais de entradas</label>
+                    <textarea id="qtdEntradas" class="text">3</textarea>
+                    <br>
+
+                    <div class="form vertical">
+                        <label class="text">Arquivo de treinamento</label>
+                        <input type="file" onchange="processaArquivo('entradaTreino', 'saidaTreino', matrixTreino)" id="entradaTreino">
+                        <textarea id="saidaTreino"></textarea>
+                    </div>
+                    <br>
+
+                    <div class="form vertical">
+                        <label class="text">Arquivo de teste</label>
+                        <input class="form" type="file" onchange="processaArquivo('entradaTeste', 'saidaTeste', matrixTeste)" id="entradaTeste">
+                        <textarea id="saidaTeste"></textarea>
+                    </div>
+
+                </div>
+                <div style="max-width: 500px;" class="vertical center-title distance">
+                    <text id="intro" class="black">
+                
+                        <h1 class="distance">
+                            Treinamento de perceptron online usando javascript
+                        </h1>
+        
+                        Esta ferramenta foi criada a fim de estudos, para se realizar o treinamento de uma rede neural simples (perceptron,
+                        que usa apenas um neurônio artificial). Para isso, foi usada a linguagem Javascript em todo o algoritmo de treino. 
+                        Para se usar a ferramenta, basta adicionar um arquivo com as entradas que serão usadas no aprendizado do neurônio, 
+                        um arquivo de teste com saídas que são conhecidas, a fim de se verificar qual é a saída do perceptron.
+                        <br>
+                        Obs: a leitura só será feita em arquivos do tipo .txt, sendo que a entrada deve conter N+1 elementos por coluna, onde
+                        N é a quantidade de entradas definida, e o último elemento é a saída esperada (que pode valer 1 ou -1). Os elementos 
+                        devem ser separados por um espaço simples.
+                        <br>
+                        Caso algum erro na execução do código seja encontrada, fique à vontade para entrar em contato avisando o problema.
+                        <br><br>
+                        <text id="resultado" class="gray"></text>
+                    </text>
+                </div>
+
+            </div>
+            <div class="center form">
+                <button onclick="perceptron(matrixTreino, matrixTeste)">Iniciar treinamento do perceptron</button>
+            </div>
+            <br>
+            
+            <div id="footer" class="horizontal center black-background"><text class="white">Construído por <a style="text-decoration: none;" class="white" href="https://br.linkedin.com/in/gabriel-monteiro-ferracioli-ba042b191">Gabriel Ferracioli</a></text></div>
+        </div>
+
+	</body>
+</html>
