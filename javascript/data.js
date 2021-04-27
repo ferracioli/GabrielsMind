@@ -6,7 +6,7 @@ export const data = [
         miniature_img: "assets/miniature_img/catnap.jpg",
         title: "Catnap",
         datetime: "Setembro de 2020",
-        text: "Jogo criado em grupo com alguns amigos que foi usado para uma Game Jam que ocorreu no ano de 2020. Desenvolvemos em 3 dias um jogo no qual ajudamos o gato que ficou trancado para fora de casa a voltar para o conforno de seu lar. Minha contribuição no projeto foi na criando algumas das artes apresentadas, como o cenário e sprites dos gatos andando. A ferramenta que usei para isso foi a GIMP."
+        text: "Jogo criado em grupo com alguns amigos que foi usado para uma Game Jam que ocorreu no ano de 2020. Desenvolvemos em 3 dias um jogo no qual ajudamos o gato que ficou trancado para fora de casa a voltar para o conforno de seu lar. Minha contribuição no projeto foi a criação de algumas das artes apresentadas, como o cenário e sprites dos gatos andando. A ferramenta que usei para isso foi a GIMP."
     },
     {
         id: 2,
@@ -46,7 +46,7 @@ export const data = [
         miniature_img: "assets/miniature_img/gapsi.png",
         title: "GAPsi",
         datetime: "Setembro de 2019 - Julho de 2021",
-        text: "Sou bolsista PUB encarregado de cuidar da divulgação do GAPsi, o Grupo de Apoio Psicopedagógico que se originou no ICMC. Grupo que visa cuidar da saúde mental de todos que vivem no ambiente universitário. Neste projeto, estou atuo cuidando da página de divulgação do grupo, e também das redes sociais Facebook e Instagram para divulgação. Para isso, uso PHP, MySQL e  Javascript na programação, além de usar a ferramenta Canva para a criação dos posts."
+        text: "Sou bolsista PUB encarregado de cuidar da divulgação do GAPsi, o Grupo de Apoio Psicopedagógico que se originou no ICMC. Grupo que visa cuidar da saúde mental de todos que vivem no ambiente universitário. Neste projeto, atuo cuidando da página de divulgação do grupo, e também das redes sociais Facebook e Instagram para divulgação. Para isso, uso PHP, MySQL e  Javascript na programação, além de usar a ferramenta Canva para a criação dos posts."
     }
 ];
   

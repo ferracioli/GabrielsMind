@@ -66,64 +66,66 @@ function processaArquivo(nomeEntrada, nomeSaida, matrix) {
     }   
 }
 
-/* Função que gerencia o treinamento e teste do perceptron */
-function perceptron(matrixTreino, matrixTeste) {
+/* Função que gerencia o treinamento e teste */
+function adaline(matrixTreino, matrixTeste) {
     
     // Variáveis usadas no treinamento
-    var qtdEntradas = Number.parseInt(document.getElementById("qtdEntradas").value);
     var txAprendizado = document.getElementById("taxaAprendizagem").value;
+    var precisao = document.getElementById("precisao").value;
+    var qtdEntradas = Number.parseInt(document.getElementById("qtdEntradas").value);
 
-    if(matrixTeste.length == 0 || matrixTreino.length == 0 || Number.isNaN(qtdEntradas) || Number.isNaN(txAprendizado)) {
+    if(matrixTeste.length == 0 || matrixTreino.length == 0 || Number.isNaN(precisao) || Number.isNaN(qtdEntradas) || Number.isNaN(txAprendizado)) {
         alert("Por favor, insira arquivos com pelo menos uma linha cada e entradas válidas.");
     }
     else {
         var pesos = [];
 
         var t0 = performance.now();
-        var ciclos = treinaPerceptron(pesos, matrixTreino, qtdEntradas, txAprendizado);
+        var ciclos = treinaAdaline(pesos, matrixTreino, qtdEntradas, txAprendizado, precisao);
         var t1 = performance.now();
-        testaPerceptron(matrixTeste, qtdEntradas, pesos, t1-t0, ciclos);
+        testaAdaline(matrixTeste, qtdEntradas, pesos, t1-t0, ciclos);
     }
 }
 
 // Função responsável pela geração do vetor de pesos ideal
-function treinaPerceptron(pesos, matrixTreino, qtdEntradas, txAprendizado) {
+function treinaAdaline(pesos, matrixTreino, qtdEntradas, txAprendizado, precisao) {
 
     // O peso do elemento tetha inicialmente é zero
     pesos.push(0);
     for (var i = 0; i < qtdEntradas; i++)
-        pesos.push(Math.round(Math.random() * 5));
+        pesos.push(Math.round(Math.random() * 1));
     console.log("Vetor de pesos inicial:");
     console.log(pesos);
     console.log("Quantidade casos para se treinar: " + matrixTreino.length);
 
+    var EQManterior = 0;
+    var EQMatual = 0;
     var ciclos = 0;
-    var erro;
 
     // Faz um laço que refina os pesos
     do {
         // Enquanto tiver saídas diferentes das esperadas
-        erro = false;
+        EQManterior = eqm(matrixTreino, pesos, qtdEntradas, matrixTreino.length);
         // Repete para cada linha da matriz
         for(var i = 0; i < matrixTreino.length; i++) {
             var pAtivacao = soma(pesos, matrixTreino[i], qtdEntradas);
             var sinalSaida = ((pAtivacao >= 0) ? 1 : -1);
             // Se o sinal de saída é diferente do sinal esperado, mudamos os pesos e refazemos o laço
             if(sinalSaida != matrixTreino[i][qtdEntradas+1]) {
-                erro = true;
                 // Atualiza os pesos
                 for(var j = 0; j < qtdEntradas + 1; j++)
                     pesos[j] += txAprendizado*(matrixTreino[i][qtdEntradas+1] - sinalSaida)*matrixTreino[i][j];
                     // pesos novos = pesos antigos + tx(saida esperada - minha saida)amostra
             }
         }
+        EQMatual = eqm(matrixTreino, pesos, qtdEntradas, matrixTreino.length);
         ciclos++;
-    } while(erro);
+    } while(Math.abs(EQMatual - EQManterior) > precisao);
     return ciclos;
 }
 
 // Verifica se o treinamento deu certo fazendo testes com resultados conhecidos
-function testaPerceptron(matrixTeste, qtdEntradas, pesos, tempo, ciclos) {
+function testaAdaline(matrixTeste, qtdEntradas, pesos, tempo, ciclos) {
     // Usa o vetor de pesos que já foi regulado
     var acertos = 0;    
 
@@ -134,10 +136,8 @@ function testaPerceptron(matrixTeste, qtdEntradas, pesos, tempo, ciclos) {
 
         if(matrixTeste[i][qtdEntradas+1] == sinalSaida)
             acertos++;
-        else {
-            console.log("Erro: saida obtida: "+sinalSaida+", saída esperada: "+matrixTeste[i][qtdEntradas+1]);
-            console.log(matrixTeste[i]);
-        }
+        else
+            console.log("Saida: "+sinalSaida+", no caso "+i+" resultado esperado: "+matrixTeste[i][qtdEntradas+1]);
     }
 
     resultado = "Resultados finais:<br><br>Vetor de pesos encontrado:<br>";
@@ -162,4 +162,16 @@ function soma(pesos, entradas, qtdEntradas) {
     for(var i = 0; i < qtdEntradas + 1; i++)
         soma += pesos[i]*entradas[i];
     return soma;
+}
+
+// Calcula o erro quadratico medio
+function eqm(matrixTreino, pesos, qtdEntradas, qtdLinhas) {
+    var eqm = 0;
+    for(var i = 0; i < qtdLinhas; i++) {
+        var u = soma(pesos, matrixTreino[i], qtdEntradas);
+        eqm += (matrixTreino[i][qtdEntradas+1] - u)*(matrixTreino[i][qtdEntradas+1] - u);
+    }
+    eqm /= qtdLinhas;
+
+    return eqm;
 }
