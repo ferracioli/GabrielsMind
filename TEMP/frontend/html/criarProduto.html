@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Tags usadas para obter as dimensões do dispositivo (deixar responsivo do celular) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<title>Barão das Skins</title>
+		<link rel="shortcut icon" href="../img/teemo.png"/>
+
+        <link rel="stylesheet" type="text/css" href="../css/global.css">
+		<link rel="stylesheet" type="text/css" href="../css/form.css">
+        <link rel="stylesheet" type="text/css" href="../css/product.css">
+
+	</head>
+
+	<body>
+        <!-- Navbar da página -->
+        <nav id="navbar">
+            <a href="../../index.html" id="page-name" >Barão das Skins</a>
+			<div class="horizontal center">
+				<a href="../../index.html" class="header-link responsive-text">PÁGINA INICIAL</a>
+				<a href="login.html" class="header-link responsive-text">ÁREA DE USUÁRIO</a>
+			</div>
+        </nav>
+
+        <div id="page-body" class="vertical center">
+
+            <!-- Formulário para a inserção de um novo produto -->
+            <form action="#">
+                <div id="product" class="responsive-div">
+                    <div class="vertical">
+                        <label class="text">Imagem do produto:</label>
+                        <input name="productFile" type="File">
+                        <br>
+
+                        <label class="text">Spotlight atual do produto:</label>
+                        <input name="spotlightFile" type="File">
+                    </div>
+                    <div style="margin: 20px 0;" class="vertical">
+
+                        <div class="vertical">
+                            <label class="text gold">Nome:</label>
+                            <input style="width:300px;" class="text" type="text" title="nome" placeholder="Insira o nome aqui">
+                        </div>
+                        <div class="vertical">
+                            <label class="text gold">Jogo:</label>
+                            <select style="width:300px;" name="Jogo">
+                                <option value = "League of Legends">League of Legends</option>    
+                                <option value = "Valorant" selected>Valorant</option>
+                                <option value = "Among Us">Among Us</option>
+                                <option value = "Overwatch">Overwatch</option>
+                            </select>
+                        </div>
+                        <div class="vertical">
+                            <label class="text gold">Descrição:</label>
+                            <textarea style="width:300px;" rows="5" cols="60" name="description" ></textarea>
+                        </div>
+                        <div class="vertical">
+                            <label class="text gold">Estoque:</label>
+                            <input style="width:300px;" class="text" type="text" title="estoque" placeholder="ex: 2">
+                        </div>
+                        <div class="vertical">
+                            <label class="text gold">Preço:</label>
+                            <input style="width:300px;" class="text" type="text" title="preco"  placeholder="ex: 1.99">
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+            
+            <div class="horizontal">
+                <button onclick="window.location.href = 'crudProdutos.html';" class="cancel" >Cancelar</button>
+                <div class="horizontal-space"></div>
+                <button onclick="alert('Produto cadastrado com sucesso');" class="edit" >Adicionar</button>
+            </div>
+        </div>    
+
+        <!-- Rodapé da página -->
+        <footer id="footer" class="responsive-div">
+            <text class="cyberpunk-blue margin responsive-text">Fone: 4002-8922<br>SAC: nao@responderemos.com</text>
+            <a href="../../index.html" class="link gold">Barão das Skins</a>
+            <text class="cyberpunk-blue margin responsive-text">Fuxiqueiros™ nenhum direito reservado</text>
+        </footer>
+        
+	</body>
+</html>

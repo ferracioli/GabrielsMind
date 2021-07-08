@@ -1,0 +1,54 @@
+/* OBS: esse estilo é usado unicamente na tela de visão de um produto individualmente (spotlight) */
+
+/* Imagem de capa do produto */
+#spotlightImage {
+    width: 200px;
+    height: 200px;
+    margin: 0 20px;
+}
+
+/* Bloco que ocupa a tela toda, usado para fechar o spotlight quando ele está aberto */
+#fechaVideo {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    display: none;
+    position: fixed;
+}
+  
+/* Id responsável por fazer o vídeo(spotlight) aparecer na tela */
+#popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 540px;
+    max-height: 360px;
+    margin-left: -270px;
+    margin-top: -180px;
+    z-index: 999;
+    overflow: visible;
+}
+
+/* Define a cor do botão (é o cyberpunk-blue do global.css) */
+#spotlightButton {
+    color: #23dbf5;
+    text-decoration: none;
+    margin: 0 20px;
+}
+#spotlightButton:hover {
+    cursor: pointer;
+}
+
+/* Bloco dos botões de fechar compra ou adicionar ao carrinho */
+#spotlightOptions {
+    margin: 10px 15px;
+    border-radius: 6px;
+    height: 40px;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+#spotlightOptions button {
+    margin: 0 5px;
+}

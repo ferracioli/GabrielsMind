@@ -1,0 +1,78 @@
+/* Define as cores usadas como variáveis, para facilitar */
+:root {
+    --gold: #cd9f3f;
+    --cyberpunk-blue: #23dbf5;
+    --cyberpunk-purple: #40188f;
+    --black: #031019;
+    --white: #e1e1e1;
+    --gray: #2e363f;
+}
+
+/* Espaçamento para a mensagem de boas vindas */
+.padding {
+    padding: 0 40px;
+}
+
+/* Estilo do bloco branco que engloba as informações */
+.card {
+	width: 200px;
+	height: 200px;
+	margin:15px;
+	padding:0 20px;
+    background-color: var(--white);
+	
+	border: 1px solid var(--white);
+	border-radius: 25px;
+	box-shadow: 1px 1px 3px var(--gray);
+	
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	text-align: center;
+}
+/* Para telas de tamanho entre 401 e 1000 pixels de largura */
+@media only screen and (max-width: 1000px) and (min-width: 401px) {
+	.card {
+		width: 150px;
+		height: 170px;
+		padding: 0 15px;
+	}
+}
+/* Para telas com até 400 pixels de largura */
+@media only screen and (max-width: 400px) {
+	.card {
+		width: 120px;
+		height: 150px;
+		margin: 5px;
+		padding:15px 10px;
+	}
+    .icon {
+		width: 40px;
+        height: auto;
+	}
+}
+
+/* Ícones com as opções que o usuário pode fazer */
+.icon {
+    width: 70px;
+    height: auto;
+}
+
+/* Fundo cinza para a apresentação dos produtos */
+#products {
+    background-color: var(--gray);
+    width: 100vw;
+}
+
+/* Imagens dos produtos */
+#products img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Remove o estilo dos botões (tanto das ações do usuário quanto dos produtos) */
+#actions a, #sale a {
+    text-decoration: none;
+    color: var(--black);
+}
