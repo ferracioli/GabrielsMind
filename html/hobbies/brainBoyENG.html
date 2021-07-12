@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Tags usadas para obter as dimensões do dispositivo -->
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <meta name="description" content="Brain Boy: an alternative way to backup your Game Boy games">
+        <meta name="keywords" content="Game Boy, Pokemon, Zelda, Cartridge, Battery, Backup, Brain Boy">
+        <meta name="author" content="Gabriel Monteiro Ferracioli">
+
+		<title>Gabriel´s Mind</title>
+		<link rel="shortcut icon" href="../../assets/icon.ico"/>
+		
+		<script src="../../javascript/utilities.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/global.css">
+		<link rel="stylesheet" type="text/css" href="../../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../../css/table.css">
+	</head>
+	<body>
+        <nav id="navbar" class="light-navbar">
+            <a href="../../index.html" id="page-name" class="black">Gabriel's Mind</a>
+			<div class="horizontal center">
+				<a href="../../index.html" id="button-1" class="header-link light-header-link black">HOME</a>
+				<a href="../contato.html" id="button-2" class="header-link light-header-link black">CONTACT</a>
+				<a href="../ferramentas.html" id="button-3" class="header-link light-header-link black">TOOLS</a>
+			</div>
+			<img id="change-mode" src="../../assets/DarkMode.png" onclick="changeMode()">
+        </nav>
+        <div id="page-body" class="vertical center white-background">
+
+            <div id="introduction">
+                <h1 class="red">Brain Boy: an alternative way to keep your Game Boy saves alive</h1>
+                <a href="brainBoy.html">Leia em português<img class="flag" src="../../assets/BrazilFlag.png"></a>
+				<text id="intro" class="black">
+					
+                    <div class="vertical center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TZ6lrEZGosc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <p>
+                        A few months ago I discovered the Mega Memory Card, a Gameboy Color accessory designed to make backups of
+                        Game Boy saves. This cartridge was very attractive to me as it eliminates terror of many cartridge collectors: 
+                        battery depletion. Despite having a simple solution, this problem frightens many people who are inexperienced 
+                        in soldering. Sadly, I realized that the cartridge is relatively rare, and the easiest way to get it is through
+                        importation (I live in Brazil), so it would be VERY expensive.
+                    </p>
+                    <p>
+                        I was already giving up the search for it when I found the Brain Boy, a cartridge that was created to be a 
+                        cheating device in the Pokemon games. Unfortunately, there are few websites with descriptions about the 
+                        cartridge, and information about it allowing backup was VERY sparse, so I ended up risking buying it, and 
+                        luckly my bet was successful, I finally got a cartridge that performs backups of Gameboy games.
+                    </p>
+                    <p>
+                        The Brain Boy is a cartridge created by the company 'Pelican Accessories' in the early 2000s, and its focus was
+                        allow cheating in the first three games in the Pokemon series (Red, Blue and Yellow). It is worth noting that the
+                        device is not compatible with Game Boy Classic, only its successors, due to the lock on the 'on' button
+                        of the videogame. In addition to cheating, it also allows you to speed up the game speed, color the game with a palette
+                        pre-defined, create your own color palette for the games, and finally, perform backups.
+                    </p>
+                    <p>
+                        To be honest, I ignored the non-backup functions, so there's no analysis into the other features in the video I 
+                        made. Brain Boy has a flash memory that makes available 200 blocks to allocate any game that has the native 
+                        save function in the game (cartridges that uses battery). Despite this, not the entire Game Boy/Gameboy Color 
+                        game library is compatible with the device, so I decided to register all the games I tried in the table below. 
+                        The space occupied in blocks is relative to a backup of the beginning of the game (for Pokemon it would be the 
+                        equivalent of geting your initial, and going to the second city, and in the case of Zelda, would get the shield). 
+                        In addition to the tests, I left a bunch of files of the instruction manual and the game box, as I hope this will help 
+                        the Retro community with more information about the accessory.
+                    </p>
+                    <p>
+                        The Brain Boy is not a common accessory, but I hope with the knowledge of it, and the other backup methods
+                        that I mention in my video, you can keep your game saves!
+                    </p>
+
+                    <table id="table">
+                        <tr>
+                            <th>Game</th>
+                            <th>Region</th>
+                            <th>Compatible</th>
+                            <th title="As you advance in the game, it can ocupy more blocks">Blocks</th>
+                        </tr>
+                            <!-- Imprime o conteúdo de data.js -->
+                            <script type="module" src="../../javascript/brainBoy.js"></script>
+                    </table>
+                    <br>
+
+                    <ul>
+                        <li><a class='link roboto' href='../../assets/BrainBoy/brainBoyManual.pdf' download>
+                            Scanned booklet PDF
+                        </a></li>
+    
+                        <li><a class='link roboto' href='../../assets/BrainBoy/brainBoyManual.zip' download>
+                            .zip of scanned booklet
+                        </a></li>
+                    </ul>
+
+                    <br><br>
+                    <b>Feel free to use this information on another platforms, all I ask is a reference or source of this page</b>
+                    <br><br>
+
+                    <h3>Gallery</h3>
+                    <div class="wrap">
+
+                        <div class="vertical center gallery">
+                            <img alt="Brain Boy cartridge front" class="brain-boy_image" src="../../assets/BrainBoy/cart1.jpg">
+                            Cartridge front
+                        </div>
+                        <div class="vertical center gallery">
+                            <img alt="Brain Boy cartridge back" class="brain-boy_image" src="../../assets/BrainBoy/cart2.jpg">
+                            Cartridge back
+                        </div>
+                        <div class="vertical center gallery">
+                            <img alt="Brain Boy cartridge" class="brain-boy_image" src="../../assets/BrainBoy/cart3.jpg">
+                            Cartridge in angle
+                        </div>
+                        <div class="vertical center gallery">
+                            <img class="brain-boy_image" src="../../assets/BrainBoy/cart4.jpg">
+                            Brain Boy cartridge joint
+                        </div>
+                        <div class="vertical center gallery">
+                            <img class="brain-boy_image" src="../../assets/BrainBoy/cart5.jpg">
+                            Comparision with GB cartridge
+                        </div>
+                        <div class="vertical center gallery">
+                            <img class="brain-boy_image" src="../../assets/BrainBoy/cart6.jpg">
+                            Inserted cartridge
+                        </div>
+                        <div class="vertical center gallery">
+                            <img class="brain-boy_image" src="../../assets/BrainBoy/cart7.jpg">
+                            Inserted in gba
+                        </div>
+
+                    </div>
+
+                    <div class="wrap">
+
+                        <div class="vertical center gallery">
+                            <img class="brain-boy_image" src="../../assets/BrainBoy/screen1.jpg">
+                            B&W Boot screen
+                        </div>
+                        <div class="vertical center gallery">
+                            <img alt="Brain Boy boot screen" class="brain-boy_image" src="../../assets/BrainBoy/screen2.jpg">
+                            Colorful Boot screen
+                        </div>
+
+                    </div>
+
+                    <div class="wrap">
+
+                        <div class="vertical center gallery">
+                            <img alt="Brain Boy box front" class="brain-boy_image" src="../../assets/BrainBoy/box1.jpg">
+                            Box front
+                        </div>
+                        <div class="vertical center gallery">
+                            <img alt="Brain Boy box back" class="brain-boy_image" src="../../assets/BrainBoy/box2.jpg">
+                            Box back
+                        </div>
+                        <div class="vertical center gallery">
+                            <img class="brain-boy_image" src="../../assets/BrainBoy/box3.jpg">
+                            Box side A
+                        </div>
+                        <div class="vertical center gallery">
+                            <img class="brain-boy_image" src="../../assets/BrainBoy/box4.jpg">
+                            Box side B
+                        </div>
+                        <div class="vertical center gallery">
+                            <img class="brain-boy_image" src="../../assets/BrainBoy/box5.jpg">
+                            Box cover
+                        </div>
+                        <div class="vertical center gallery">
+                            <img class="brain-boy_image" src="../../assets/BrainBoy/box6.jpg">
+                            Box base
+                        </div>
+                        <div class="vertical center gallery">
+                            <img class="brain-boy_image" src="../../assets/BrainBoy/box7.jpg">
+                            Size comparision with GB box front
+                        </div>
+                        <div class="vertical center gallery">
+                            <img class="brain-boy_image" src="../../assets/BrainBoy/box8.jpg">
+                            Size comparision with GB box side
+                        </div>
+
+                    </div>
+                    
+                </text>
+			</div>
+            
+            <div id="footer" class="horizontal center black-background"><text class="white">Built by <a style="text-decoration: none;" class="white" href="https://br.linkedin.com/in/gabriel-monteiro-ferracioli-ba042b191">Gabriel Ferracioli</a></text></div>
+        </div>
+	</body>
+</html>

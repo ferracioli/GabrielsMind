@@ -1,0 +1,39 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Contorno comum de todas as linhas */
+td, th {
+    border: 1px solid #BBBBBB;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Linhas ímpares */
+tr:nth-child(even) {
+    background-color: #BBBBBB;
+}
+
+@media only screen and (min-width: 801px){
+	.gallery {
+        width: 360px;
+        margin: 10px;
+    }
+}
+
+.brain-boy_image {
+    max-width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 800px){
+	.brain-boy_image {
+        max-width: 60%;
+        height: auto;
+    }
+}
+
+.flag {
+    width: 20px;
+    height: auto;
+}

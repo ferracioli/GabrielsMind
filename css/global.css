@@ -24,6 +24,7 @@ body {
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
+    background-color: var(--white);
 }
 
 /* Padroniza a fonte de todos os textos */
@@ -88,6 +89,11 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+.wrap {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
 .responsive-div {
 	/* Usada para cabeçalho e rodapé */
 	display:flex;
@@ -99,6 +105,12 @@ body {
 	.responsive-div {
 		flex-direction: column;
 	}
+}
+
+.imagem-contato img {
+    width: 42px;
+    height: auto;
+    margin: 10px 0 0 0;
 }
 
 /*  =========== BARRA DE NAVEGAÇÃO ===========  */
