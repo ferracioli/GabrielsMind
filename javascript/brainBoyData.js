@@ -1,6 +1,12 @@
 // Array with the elements that will be repeated in HTML
 export const table = [
     {
+        name: "Pokemon Crystal",
+        region: "USA",
+        worked: true,
+        space: 5
+    },
+    {
         name: "Pokemon Green",
         region: "JP",
         worked: false,
