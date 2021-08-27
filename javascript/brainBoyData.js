@@ -13,6 +13,12 @@ export const table = [
         space: 12
     },
     {
+        name: "Pokemon Red",
+        region: "USA",
+        worked: true,
+        space: 12
+    },
+    {
         name: "Pokemon Yellow",
         region: "USA",
         worked: true,
@@ -23,6 +29,12 @@ export const table = [
         region: "USA",
         worked: true,
         space: 4
+    },
+    {
+        name: "Resident Evil Gaiden",
+        region: "USA",
+        worked: true,
+        space: 1
     },
     {
         name: "Super Mario Land 2: 6 Golden Coins",
