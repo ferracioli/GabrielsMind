@@ -25,6 +25,12 @@ export const table = [
         space: 11
     },
     {
+        name: "Pokemon Yellow",
+        region: "AUS",
+        worked: true,
+        space: 5
+    },
+    {
         name: "Pokemon Silver",
         region: "USA",
         worked: true,
