@@ -6,7 +6,7 @@ export const data = [
         miniature_img: "assets/miniature_img/gapsi.png",
         title: "GAPsi",
         datetime: "Setembro de 2019 - Agosto de 2021",
-        text: "Sou bolsista PUB encarregado de cuidar da divulgação do GAPsi, o Grupo de Apoio Psicopedagógico que se originou no ICMC. Grupo que visa cuidar da saúde mental de todos que vivem no ambiente universitário. Neste projeto, atuo cuidando da página de divulgação do grupo, e também das redes sociais Facebook e Instagram para divulgação. Para isso, uso PHP, MySQL e  Javascript na programação, além de usar a ferramenta Canva para a criação dos posts."
+        text: "Fui o bolsista PUB encarregado de cuidar da divulgação do GAPsi, o Grupo de Apoio Psicopedagógico que se originou no ICMC. Grupo que visa cuidar da saúde mental de todos que vivem no ambiente universitário. Neste projeto, atuei cuidando da página de divulgação do grupo, e também das redes sociais Facebook e Instagram para divulgação. Para isso, foram usadas as tecnologias PHP, MySQL e  Javascript na programação, além de usar a ferramenta Canva para a criação dos posts."
     },
     {
         id: 2,
