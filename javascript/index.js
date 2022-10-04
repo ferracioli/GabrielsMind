@@ -1,19 +1,6 @@
 // Imports de Js devem ser feitos no início do arquivo
 import { data } from './data.js';
 
-let url = 'http://dontpad.com/pexinxa_bagre_bot_giga_dict';
-
-console.log("Testando requests diretamente no servidor")
-var req = new XMLHttpRequest();
-req.responseType = 'json';
-req.open('GET', url, true);
-req.onload  = function() {
-   //var jsonResponse = req.response;
-   console.log(req.response)
-   // do something with jsonResponse
-};
-req.send(null);
-
 const buildCard = career => {
     // Cria algumas tags de HTML a partir do objeto document e guarda em constantes
     const parent_div = document.createElement("div");
