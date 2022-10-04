@@ -3,6 +3,7 @@ import { data } from './data.js';
 
 let url = 'http://dontpad.com/pexinxa_bagre_bot_giga_dict';
 
+console.log("Testando requests diretamente no servidor")
 var req = new XMLHttpRequest();
 req.responseType = 'json';
 req.open('GET', url, true);
