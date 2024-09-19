@@ -11,7 +11,7 @@ function changeMode() {
 
         // Muda o cabeçalho
         navbar.setAttribute("class", "light-navbar");
-        modeIcon = modeIcon.replace("Lght", "Dark");
+        modeIcon = modeIcon.replace("Light", "Dark");
         console.log("Agora é " + modeIcon);
         document.getElementById("change-mode").setAttribute("src", modeIcon);
         document.getElementById("page-name").setAttribute("class", "black");
@@ -29,7 +29,7 @@ function changeMode() {
 
         // Muda o cabeçalho
         navbar.setAttribute("class", "dark-navbar");
-        modeIcon = modeIcon.replace("Dark", "Lght");
+        modeIcon = modeIcon.replace("Dark", "Light");
         console.log("Agora é " + modeIcon);
         document.getElementById("change-mode").setAttribute("src", modeIcon);
         document.getElementById("page-name").setAttribute("class", "white");
