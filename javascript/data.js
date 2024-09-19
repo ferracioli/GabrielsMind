@@ -56,7 +56,7 @@ export const data = [
         id: 1,
         link: "https://www.proadi-sus.org.br/projeto/evolucao-da-validacao-dos-algoritmos-de-torax-dermatologia-e-neuro-da-plataforma-nacional-de-armazenamento-e-inteligencia-artificial-em-imagens-medicas-para-pesquisa-inovacao-e-suporte-a-decisao-clinica",
         miniature_img: "assets/miniature_img/einstein.png",
-        title: "Junior Systems Analyst",
+        title: "Junior Systems Analyst(Hospital Albert Einstein)",
         datetime: "Oct 2023 - Present",
         text: "- Architected multiple dashboards built in Python and deployed via Ubuntu Docker images to support over 2,000 medical images for model validation<br>- Optimized segmentation time by 50% by enhancing the team’s annotation platform, which was deployed via cloud computing and connected to Amazon S3 buckets<br>- Contributed to scientific publications by providing data analysis insights, managing databases, and developing an outlier data visualization tool, co-authoring two papers"
     },
@@ -64,7 +64,7 @@ export const data = [
         id: 2,
         link: "https://www.proadi-sus.org.br/projeto/evolucao-da-validacao-dos-algoritmos-de-torax-dermatologia-e-neuro-da-plataforma-nacional-de-armazenamento-e-inteligencia-artificial-em-imagens-medicas-para-pesquisa-inovacao-e-suporte-a-decisao-clinica",
         miniature_img: "assets/miniature_img/einstein.png",
-        title: "Data Scientist Intern",
+        title: "Data Scientist Intern(Hospital Albert Einstein)",
         datetime: "Sept 2022 - Sept 2023",
         text: "- Implemented performance reports for seven doctors across different sectors using data from an internal PostgreSQL server and external API requests, leading to improved tracking of annotator productivity<br>- Reduced human error by automating team manual tasks through Bash scripting and daily backup routines"
     },
@@ -80,7 +80,7 @@ export const data = [
         id: 4,
         link: "https://qualgame.com.br",
         miniature_img: "assets/miniature_img/qualgame.png",
-        title: "Qual Game",
+        title: "Qual Game(Personal project)",
         datetime: "Oct 2022 - Feb 2023",
         text: "- Designed a webpage displaying the price history of over 30 retro video game titles for Brazilian collectors<br>- Created a Python bot to mine price data and store it in a MongoDB database, running for 6 months and supplying data to the full-stack webpage"
     },
@@ -96,7 +96,7 @@ export const data = [
         id: 6,
         link: "https://repositorio.usp.br/directbitstream/11a4ab25-4527-4dac-8d89-bdb1d211baf1/3183215.pdf",
         miniature_img: "assets/miniature_img/icmc.jpg",
-        title: "Undergraduate Research Scholar",
+        title: "Undergraduate Research Scholar(ICMC)",
         datetime: "Oct 2021 - Sept 2022",
         text: "- Developed and implemented metalearning algorithms in Python to optimize stock trading strategies, managing financial time series and publishing findings in two peer-reviewed journals"
     },
@@ -104,16 +104,16 @@ export const data = [
         id: 7,
         link: "#",
         miniature_img: "assets/miniature_img/icmc.jpg",
-        title: "Education",
+        title: "Master of Science in Computer Science",
         datetime: "Present",
-        text: "Master of Science in Computer Science"
+        text: ""
     },
     {
         id: 8,
         link: "#",
         miniature_img: "assets/miniature_img/icmc.jpg",
-        title: "Education",
+        title: "Bachelor of Science in Computer Science",
         datetime: "Dec 2023",
-        text: "Bachelor of Science in Computer Science"
+        text: ""
     }
 ];
