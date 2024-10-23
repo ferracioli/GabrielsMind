@@ -14,14 +14,15 @@
 		<script src="../javascript/utilities.js"></script>
 		<link rel="stylesheet" type="text/css" href="../css/global.css">
 		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		<link rel="stylesheet" type="text/css" href="../css/contact.css">
 	</head>
 	<body>
         <nav id="navbar" class="dark-navbar">
             <a href="../index.html" id="page-name" class="white">Gabriel's Mind</a>
 			<div class="horizontal center">
 				<a href="../index.html" id="button-1" class="header-link light-header-link white">HOME</a>
-				<a href="contato.html" id="button-2" class="header-link light-header-link white">CONTACT</a>
-				<a href="ferramentas.html" id="button-3" class="header-link light-header-link white">TOOLS</a>
+				<a href="contact.html" id="button-2" class="header-link light-header-link white">CONTACT</a>
+				<a href="classes.html" id="button-3" class="header-link light-header-link white">CLASSES</a>
 			</div>
 			<img id="change-mode" src="../assets/LightMode.png" onclick="changeMode()">
         </nav>
@@ -30,20 +31,24 @@
 			<div class="vertical">
 				<h1 class="red">This is how you can reach me:</h1>
 
-                <ul class="imagem-contato text">
-                    <li><a href="mailto:ferracioligabriel@usp.br">
+                <div id="contacts" class="imagem-contato text vertical">
+                    <a href="mailto:ferracioligabriel@usp.br">
 						<img src="../assets/contato/gmail.png">
-                        Gmail: ferracioligabriel@usp.br
-					</a></li>
+                        <text class="red">
+							Gmail: ferracioligabriel@usp.br
+						</text>
+					</a>
 
-                    <li><a href="https://github.com/ferracioli">
+                    <a href="https://github.com/ferracioli">
                         <img src="../assets/contato/github.webp">
-                        LinkedIn
-                    </a></li>
-                </ul>
+                        <text class="red">
+							LinkedIn
+						</text>
+                    </a>
+                </div>
 
 			</div>
-            </br>
+            <div style="height: 200px;"></div>
             
             <div id="footer" class="horizontal center black-background"><text class="white">Built by <a style="text-decoration: none;" class="white" href="https://www.linkedin.com/in/gabrielferracioli/">Gabriel Ferracioli</a></text></div>
         </div>
